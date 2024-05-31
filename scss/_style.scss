@@ -1,0 +1,51 @@
+$color-translucent: #8E8E8E;
+$color-blue: #2C43A1;
+$color-band: #EAEAEA;
+
+@mixin flex($jc) {
+  display: flex; 
+  justify-content: $jc;
+  align-items: center;
+}
+
+@mixin title-2 {
+  font-size: 35px;
+  line-height: 36px;
+  font-weight: 500;
+
+  @media(max-width: 1230px) {
+    font-size: 30px;
+    line-height: 39px; 
+  }
+
+  @media(max-width: 768px) {
+    font-size: 23px;
+    line-height: 31px;
+  }  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Myriad Pro', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #38393F;
+  background-color: #FFF;
+}
+
+.body-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin:  0 auto;
+}
+

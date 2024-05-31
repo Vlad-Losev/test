@@ -1,0 +1,347 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title УМК
+    link(rel="shortcut icon", href="../img/logo.svg", type="image/x-icon")
+    link(rel="stylesheet", href="../css/main.min.css")
+    script(src="../script/swiper.js", defer) 
+    script(src="../script/main.js", defer) 
+  body 
+    .body-wrapper
+      header.header 
+        .container.container-1
+          a.logo(href="../Compiled-HTML/index.html") 
+            img(src="../img/logo.svg", alt="Логотип")
+
+          .header__block 
+            .header__block__top 
+              .header__block__top__box 
+                a(href="#") Поставщикам
+                a(href="#") Контакты
+
+              .header__block__top__box  
+                a(href="mailto:order+11020657@uralmetalcompany.ru") order+11020657@uralmetalcompany.ru
+                a(href="tel:+ 8 (958) 548-78-56") 8 (958) 548-78-56
+
+            nav.header__nav 
+              .header__nav__box 
+                a.header__nav__box__link-1.(href="#")
+                  img(src="../img/menu-svg.svg", alt="Меню")
+                  span Меню
+
+                .accordion__wrapper-1
+                  .accordion__wrapper-2
+                    button.accordion Каталог металлопроката
+                      img.accordion-arrow(src="../img/arrow-bot.svg", alt="#")
+                    
+                    ul.panel 
+                      li
+                        a(href="#") Высокопрочная Упаковочная Лента (ВУЛ)
+                      li 
+                        a(href="#") Лента стальная (штрипс)
+                      li 
+                        a(href="#") Профиль
+                      li 
+                        a(href="#") Трубы
+
+              .header__nav__box 
+                a.header__nav__box__link.header__nav__box__link__backet(href="#")
+                  img(src="../img/header-basket.svg", alt="Корзина")
+                  span Корзина
+
+                a.header__nav__box__link(href="#") 
+                  img(src="../img/header-people.svg", alt="Личный кабинет")
+                  span Личный кабинет
+
+                a.header__nav__box__link(href="#") 
+                  img(src="../img/header-search.svg", alt="#")
+
+                .header__burger#burger 
+                  span 
+                  span 
+                  span   
+
+        //- Бургер-меню 
+        .container-3
+          nav.header__nav-2#menu
+            ul.list 
+              li.item 
+                .accordion__wrapper-2
+                  button.accordion.accordion_local Магнитогорск
+                    img.accordion-arrow(src="../img/arrow-bot.svg", alt="#")
+                        
+                  ul.panel 
+                    li
+                      a(href="#") Сыктывкар
+                    li 
+                      a(href="#") Агаповка
+                    li 
+                      a(href="#") Фершанпенуаз
+                    li 
+                      a(href="#") Боберовка
+
+              li.item.cabinet
+                a(href="#") Личный кабинет
+                a(href="#") Войдите или зарегистрируйтесь
+                a(href="#") 
+                  img(src="../img/arrow-right.svg", alt="Стрелка") 
+
+              li.item 
+                .accordion__wrapper-2
+                  button.accordion Каталог
+                    img.accordion-arrow(src="../img/arrow-bot.svg", alt="#")
+                        
+                  ul.panel 
+                    li
+                      a(href="#") Высокопрочная Упаковочная Лента (ВУЛ)
+                    li 
+                      a(href="#") Лента стальная (штрипс)
+                    li 
+                      a(href="#") Профиль
+                    li 
+                      a(href="#") Труба
+
+              li.item.item__link
+                a(href="#") Спецпредложения 
+
+              li.item
+                .accordion__wrapper-2.accordion-short
+                  button.accordion Сервис
+                    img.accordion-arrow(src="../img/arrow-bot.svg", alt="#")
+                        
+                  ul.panel 
+                    li
+                      a(href="#") Лента стальная (ВУЛ)
+                    li 
+                      a(href="#") Труба
+
+              li.item 
+                .accordion__wrapper-2
+                  button.accordion Компания
+                    img.accordion-arrow(src="../img/arrow-bot.svg", alt="#")
+                        
+                  ul.panel 
+                    li
+                      a(href="#") УВК
+                    li 
+                      a(href="#") ПАО ММК
+                    li 
+                      a(href="#") ОАО ММК
+                    li 
+                      a(href="#") ММК Метиз        
+
+              li.item.item__link
+                a(href="#") Контакты 
+
+              li.item.item__link
+                a(href="#") Обратная связь
+
+              li.item.item__link
+                a(href="#") Закупки
+
+              li.item.item__link
+                a(href="#") Тендер
+            
+            ul.list-2 
+              li.item-2 
+                a(href="mailto:order@uralmetalcompany.ru") order@uralmetalcompany.ru
+
+              li.item-2 
+                a(href="tel:+8 958 548-78-56") 8 (958) 548-78-56
+
+              li.item-2 
+                a(href="#") Появились вопросы? Звоните или пишите нам
+
+          //- Главное меню
+          //- .main-menu__wrapper
+          //-   .main-menu 
+              img.main-menu__cross#burger(src="../img/main-menu-cross.svg", alt="крестик")
+              
+              h2.main-menu__title Главное меню
+
+              input#search-1(type="search", name='search-1', placeholder='Поиск')
+              label(for="search-1") 
+
+              .main-menu__block 
+                ul.list 
+                  li.item
+                    a.item__link(href="#")  Каталог
+
+                    ul.list-2.margin-bot-25
+                      li.item-2 
+                        a(href="#") Высокопрочная Упаковочная Лента (ВУЛ)
+
+                      li.item-2 
+                        a(href="#") Лента стальная (штрипс)
+                          
+                      li.item-2 
+                        a(href="#") Профиль
+
+                      li.item-2 
+                        a(href="#") Трубы
+
+                    a.item__link.margin-bot-0(href="#") Спецпредложения
+
+                  li.item
+                    a.item__link(href="#") Сервис
+
+                    ul.list-2.list-2_margin
+                      li.item-2 
+                        a(href="#") Лента стальная (ВУЛ)
+
+                      li.item-2 
+                        a(href="#") Труба
+
+                  li.item
+                    a.item__link(href="#") О нас
+
+                    ul.list-2.margin-bot-0
+                      li.item-2 
+                        a(href="#") Вакансии
+
+                      li.item-2 
+                        a(href="#") Новости
+
+                      li.item-2 
+                        a(href="#") Оповещение о НМУ
+
+                      li.item-2 
+                        a(href="#") ГОСТы, ТУ и cертификаты
+
+                      li.item-2 
+                        a(href="#") Поставщикам
+
+                      li.item-2 
+                        a(href="#") Доставка
+
+                  li.item
+                    a.item__link(href="#") Контакты
+
+                    a.item__link(href="#") Обратная связь
+
+                    a.item__link(href="#") Закупки
+
+                    a.item__link(href="#") Тендер
+            
+      main 
+        section.hero 
+          .container 
+            .hero__grid 
+              .hero__grid__box.hero__grid__box__1 
+                h1.hero__title  Уральская<br>Металлообраба<span>-</span>тывающая<br>Компания
+                p.hero__grid__box__1__text Производим металлопродукцию с 2006 года на российском и европейском рынке.
+
+              .hero__grid__box.hero__grid__box__2
+                .hero__grid__box__2__wrapper
+                  p.hero__grid__box__2__text Мы – одна из <span>лучших</span><span>крупнейших</span> металлообрабатывающих компаний, производящая широкий спектр продуктов.
+                  a(href="#") Спецпредложения
+
+              .hero__grid__box.hero__grid__box__3 
+                ul.hero__grid__box__3__list
+                  li.hero__grid__box__3__item 
+                    p 1 000 позиций в наличии
+                    a(href="#") Каталог
+
+                  li.hero__grid__box__3__item 
+                    p 1,5 млн т продукции продано
+                    a(href="#") Поставщикам
+
+                  li.hero__grid__box__3__item 
+                    p 10 000 раз оказано услуг
+                    a(href="#") Сервис
+
+              .hero__grid__box.hero__grid__box__4 
+                picture 
+                  source(srcset="../img/hero-img-1.webp", type="image/webp")
+                  img(src="../img/hero-img-1.png", alt="Металлические изделия", loading="lazy", width="696" height="437")
+
+                picture 
+                  source(srcset="../img/hero-img-2.webp", type="image/webp")
+                  img(src="../img/hero-img-2.png", alt="Металлические изделия", loading="lazy", width="518" height="518")
+
+        section.news 
+          .container
+            .news__flex 
+              .news__title Последние новости
+
+              a.news__link(href="#") Все новости
+
+            .swiper 
+              .swiper-wrapper 
+                .swiper-slide 
+                  .swiper-slide__wrapper 
+                    picture 
+                      source(srcset="../img/swiper-img-1.webp", type="image/webp")
+                      img(src="../img/swiper-img-1.png", alt="Выставка", loading="lazy", width="376" height="205")
+
+                    .slider__text 13 ноября 2023 года
+                    .slider__title «УМК» на 29-ой выставке Металл-Экспо
+                    p «Уральская Металлообрабатывающая Компания» приняла участие в 29-ой Международной промышленной выставке «Металл-Экспо», которая...
+
+                .swiper-slide 
+                  .swiper-slide__wrapper 
+                    picture 
+                      source(srcset="../img/swiper-img-2.webp", type="image/webp")
+                      img(src="../img/swiper-img-2.png", alt="Мероприятие", loading="lazy", width="376" height="205")
+
+                    .slider__text 06 декабря 2023 года
+                    .slider__title «УМК» приняла участие в METAL EXPO 2023
+                    p ООО «УМК» приняла участие в 5-ой международной выставке технологий производства чугуна, стали и металлопродукции METAL EXPO 2023, которая...
+
+                .swiper-slide 
+                  .swiper-slide__wrapper 
+                    picture 
+                      source(srcset="../img/swiper-img-3.webp", type="image/webp")
+                      img(src="../img/swiper-img-3.png", alt="Мероприятие", loading="lazy", width="376" height="205")
+
+                    .slider__text 05 октября 2023 года
+                    .slider__title ООО «УМК» заняла 3 место в "Экспортере года 2023"
+                    p ООО «Уральская Металлообрабатывающая Компания» заняла призовое место во Всероссийской премии в области международной кооперации...
+
+                .swiper-slide 
+                  .swiper-slide__wrapper 
+                    picture 
+                      source(srcset="../img/swiper-img-2.webp", type="image/webp")
+                      img(src="../img/swiper-img-2.png", alt="Мероприятие", loading="lazy", width="376" height="205")
+
+                    .slider__text 06 декабря 2023 года
+                    .slider__title «УМК» приняла участие в METAL EXPO 2023
+                    p ООО «УМК» приняла участие в 5-ой международной выставке технологий производства чугуна, стали и металлопродукции METAL EXPO 2023, которая...
+
+              .swiper-pagination
+
+              .swiper-button-prev
+              .swiper-button-next
+
+        section.connection 
+          .container 
+            .connection__block 
+              .connection__title Появились вопросы? Свяжитесь с нами
+
+              p Мы ответим на все ваши вопросы о&nbsp;производстве и переработке металлопроката, а&nbsp;также его свойствах и особенностях применения. Проведем подробную консультацию по имеющимся товарам.
+
+            .connection__grid 
+              form(action="https://jsonplaceholder.typicode.com/posts", method="post") 
+                input.input-data(type="text", placeholder='Ваше имя*', required) 
+
+                input.input-data(type="text", placeholder='Компания') 
+
+                input.input-data(type="email", placeholder='E-mail*', required) 
+
+                input.input-data(type="text", placeholder='Телефон') 
+
+                button(type="submit") Отправить
+
+                label.checkbox-label(for="checkbox")
+                  input.checkbox#checkbox(type="checkbox")
+                  span.checkbox-view 
+                    svg.checkbox-icon(xmlns="http://www.w3.org/2000/svg", width="18", viewBox="0 0 511.985 511.985")
+                      path(fill="#fff", d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z")
+                  .checkbox-label__text Подтверждаю корректность введенных данных и даю согласие на обработку моих персональных данных    
+
+      footer.footer 
+        
+             
+        
